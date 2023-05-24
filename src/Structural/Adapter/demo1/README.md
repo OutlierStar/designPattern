@@ -1,0 +1,4 @@
+
+适配器模式（Adapter Pattern）是一种结构型设计模式，它可以将一个类的接口转换成客户期望的另一个接口。适配器使得原本由于接口不兼容而不能一起工作的类可以在一起工作。
+
+在上述代码中，Adaptee类拥有一个特殊的请求方法specificRequest，但是这个方法的接口与我们期望的Target接口不兼容。我们创建了一个适配器类Adapter，它实现了Target接口，并包含一个Adaptee对象。在Adapter的request方法中，它调用Adaptee的specificRequest方法来完成任务。在客户端代码中，我们实例化了Adaptee对象和Adapter对象，将Adaptee对象传递给Adapter的构造函数，最后通过Adapter对象调用request方法，就可以完成任务。
