@@ -1,4 +1,4 @@
-package Creational.Factory.demo1;
+package Creational.FactoryMethod.demo1;
 
 // 定义产品接口
 interface Product {
